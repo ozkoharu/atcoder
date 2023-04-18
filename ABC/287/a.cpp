@@ -10,10 +10,15 @@ int main()
         cin >> s[i];
     }
     int yes = 0;
+    int no = 0;
     for (int i = 0; i < n; i++) {
-        if (s[i] == "For") yes++;
+        if (s[i] == "For") {
+            yes++;
+        } else {
+            no++;
+        }
     }
-    if (yes > n) cout << "Yes" << endl;
+    if (yes > no) cout << "Yes" << endl;
     else cout << "No" << endl;
     return 0;
 }
